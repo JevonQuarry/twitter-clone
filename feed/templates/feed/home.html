@@ -1,0 +1,47 @@
+{%extends 'feed/base.html'%}
+
+{%block content%}
+
+<div class="jumbotron">
+    <h1 class="display-4">Hello, {{user.username}}.</h1>
+    <p class="lead">Welcome to Twitter Clone!</p>
+    <hr class="my-4">
+    <p>Create a tweet now</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{%url 'tweetcreate' %}" role="button">Create</a>
+    </p>
+  </div>
+
+
+
+
+<div class= "container">
+    {% for tweet in object_list %}
+        
+        
+        <br>
+        <div class="card" >
+            <div class="card-header" style="background-color: #b00c00;">
+                <a href="#" style= "color:#ffff; text-decoration: none;">
+                    <h4>{{tweet.uname}}</h4>
+                </a>
+                
+            </div>
+            <div class="card-body">
+              <p class="card-text">{{tweet.text}}</p>
+              <p class="card-text text-muted">{{tweet.datetime}}</p> 
+              {%if tweet.uname == user%}
+              <a href="{%url 'tweetupdate' tweet.id%}" class="btn btn-primary" style="background-color: #b00c00; border:none;">Update</a>
+              <a href="{%url 'tweetdelete' tweet.id%}" class="btn btn-primary" style="background-color: #b00c00; border:none;">Delete</a>
+              {%endif%}
+              
+             <!--<a href="#" class="btn btn-primary" style="background-color: #b00c00; border:none;">Like</a>
+              <a href="#" class="btn btn-primary" style="background-color: #b00c00; border:none;" >Comment</a>-->
+            </div>
+          </div>
+          <br>
+
+    {% endfor %}
+</div>    
+
+{%endblock content%}
