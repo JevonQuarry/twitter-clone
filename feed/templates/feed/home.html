@@ -32,7 +32,7 @@
               {%if tweet.pic%}
               <br><br><br>
               <img src="{{tweet.pic.url}}">
-              {%end if%}
+              {%endif%}
               <p class="card-text text-muted">{{tweet.datetime}}</p> 
               {%if tweet.uname == user%}
               <a href="{%url 'tweetupdate' tweet.id%}" class="btn btn-primary" style="background-color: #b00c00; border:none;">Update</a>
