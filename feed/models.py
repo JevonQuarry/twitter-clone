@@ -6,6 +6,6 @@ from django.contrib.auth.models import User
 class tweet(models.Model):
     uname = models.ForeignKey(User,on_delete=models.CASCADE)
     text = models.TextField(max_length=300, default='')
-    pic = models.ImageField(null=True, blank=True, upload_to='images/')
+    pic = models.ImageField(null=True, blank=True, upload_to='profile_pics')
     datetime = models.DateTimeField(default=timezone.now)
 
