@@ -29,10 +29,10 @@
             </div>
             <div class="card-body">
               <p class="card-text">{{tweet.text}}</p>
-              {{%if tweet.pic%}}
+              {%if tweet.pic%}
               <br><br><br>
               <img src="{{tweet.pic.url}}">
-              {{%end if%}}
+              {%end if%}
               <p class="card-text text-muted">{{tweet.datetime}}</p> 
               {%if tweet.uname == user%}
               <a href="{%url 'tweetupdate' tweet.id%}" class="btn btn-primary" style="background-color: #b00c00; border:none;">Update</a>
