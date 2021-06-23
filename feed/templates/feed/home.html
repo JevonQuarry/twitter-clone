@@ -30,9 +30,7 @@
             <div class="card-body">
               <p class="card-text">{{tweet.text}}</p>
               <br><br><br>
-              {%if tweet.pic == True%}
-              {{tweet.pic.url}}
-              {%endif%}
+              <img src="{{tweet.pic.url}}">
               <p class="card-text text-muted">{{tweet.datetime}}</p> 
               {%if tweet.uname == user%}
               <a href="{%url 'tweetupdate' tweet.id%}" class="btn btn-primary" style="background-color: #b00c00; border:none;">Update</a>
