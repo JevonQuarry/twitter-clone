@@ -6,7 +6,7 @@ Let’s make simple Twitter. Users can create an account to post tweets and see 
 Check out [LIVE DEMO](https://jq-twitter-clone.herokuapp.com/) here!!
 <br><br>
 <img src="https://res.cloudinary.com/dsbnm5kgb/image/upload/v1624480115/Coding/twitter-clone_login_picture_qnjqz1.jpg" width="400"/>
-<img src="https://res.cloudinary.com/dsbnm5kgb/image/upload/v1624480117/Coding/twitter-clone_picture_xlcmvy.jpg" width="400"/>
+<img src="https://res.cloudinary.com/dsbnm5kgb/image/upload/v1624501977/Coding/twitter-clone_picture_xyei0i.jpg" width="400"/>
 
 ## Tech used
 ```
