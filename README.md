@@ -1,6 +1,6 @@
 # Twitter Clone
 ```
-Let’s make simple Twitter. Users can create an account to post tweets and see view tweets of others.
+Users can create an account to post and view other tweets, along with uploading, and viewing images.
 
 ```
 Check out [LIVE DEMO](https://jq-twitter-clone.herokuapp.com/) here!!
